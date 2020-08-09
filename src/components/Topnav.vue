@@ -1,6 +1,6 @@
 <template>
     <div class="topnav">
-        <div class="logo">LOGO123123</div>
+        <div class="logo">LOGO</div>
         <ul class="menu">
             <li>菜单1</li>
             <li>菜单2</li>
@@ -15,6 +15,8 @@ export default {}
     background: pink;
     display: flex;
     padding: 16px;
+    position: relative;
+    z-index: 10;
     > .logo {
         max-width: 6em;
         margin-right: auto;
