@@ -1,5 +1,5 @@
 <template>
     <div>
-        我是switcdemo
+        默认页面
     </div>
 </template>

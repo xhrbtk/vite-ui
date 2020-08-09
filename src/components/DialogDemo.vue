@@ -1,5 +1,5 @@
 <template>
     <div>
-        我是switcdemo
+        我是dialogdemo
     </div>
 </template>
