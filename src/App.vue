@@ -1,13 +1,12 @@
 <template>
-    <xhr />
+    <div>导航栏 | <router-link to="/"> xhr </router-link> | <router-link to="/xxx">xhr1</router-link></div>
+    <hr />
+    <router-view />
 </template>
 
 <script>
-import xhr from './components/xhr.vue'
 export default {
     name: 'App',
-    components: {
-        xhr,
-    },
+    components: {},
 }
 </script>
