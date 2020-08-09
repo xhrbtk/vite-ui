@@ -4,10 +4,9 @@
         <div class="banner">
             <h1>vite-ui</h1>
             <h2>vue3</h2>
-            
             <p class="actions">
                 <a>Github</a>
-                <a>开始</a>
+                <router-link to="/Doc">开始</router-link>
             </p>
         </div>
     </div>
