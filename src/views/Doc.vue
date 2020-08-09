@@ -29,8 +29,7 @@ import { Ref, inject } from 'vue'
 export default {
     components: { Topnav },
     setup() {
-        const menuVisible = inject<Ref>('xxx')
-        console.log('topnav 获取的 menuVisible 为：' + menuVisible.value)
+        const menuVisible = inject<Ref>('menuVisible')
         return { menuVisible }
     },
 }
