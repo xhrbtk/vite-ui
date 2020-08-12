@@ -34,11 +34,15 @@ span {
     width: $h2;
     background: white;
     border-radius: $h2 / 2;
+    transition: left 0.25s;
 }
 button.checked {
     background-color: blue;
 }
 button.checked > span {
     left: calc(100% - 20px);
+}
+button:focus {
+    outline: none;
 }
 </style> 
