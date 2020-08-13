@@ -4,7 +4,10 @@
     </div>
     <h1>示例 1</h1>
     <div>
-        <Button @click="onClick" @focus="onClick" @mouseover="onClick" size="small">你好</Button>
+        <Button>默认</Button>
+        <Button theme="button">button</Button>
+        <Button theme="link">link</Button>
+        <Button theme="text">text</Button>
     </div>
 </template>
 
