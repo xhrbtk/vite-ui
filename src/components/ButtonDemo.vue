@@ -9,6 +9,11 @@
         <Button theme="link">link</Button>
         <Button theme="text">text</Button>
     </div>
+    <h1>示例 2</h1>
+    <div>
+        <Button size="big">big</Button>
+        <Button size="small">small</Button>
+    </div>
 </template>
 
 <script lang="ts">

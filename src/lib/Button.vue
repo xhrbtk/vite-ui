@@ -1,14 +1,34 @@
 <template>
-  <button class="gulu-button" :class="`gulu-theme-${theme}`"><slot /></button>
+  <button class="gulu-button" :class="classes"><slot /></button>
 </template>
 
 <script>
+import { computed } from "vue";
 export default {
     props:{
         theme: {
             type: String,
             default: 'button'
+        },
+        size: {
+          type: String,
+          default: "normal"
+        },
+        level:{
+          type: String,
+          default: "1"
         }
+    },
+    setup(props){
+      const {theme, size} = props;
+      const classes = computed(() => {
+        return {
+          [`gulu-theme-${theme}`]: theme,
+          [`gulu-size-${size}`]: size,
+          [`gulu-level-${level}`]: level,
+        };
+      });
+      return {classes}
     }
 }
 </script>
