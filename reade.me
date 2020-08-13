@@ -22,3 +22,17 @@
 
 ## yarn install / npm  install
 ## yarn dev / npm run dev
+
+## vue3 属性绑定
+- 使用默认属性都绑定到根元素
+- 使用inheritAttrs:false 可以取消默认绑定
+- 使用$attrs或者context.attrs获取所有属性
+- 使用v-bin=”$attrs“批量绑定属性
+- 使用const {size,...rest} = context.attrs将属性分开
+
+## props vs attrs
+
+- props 要先声明才能取值 attrs不用先声明
+- props不包含事件 attrs包含
+- props没有声明的属性 会跑到atrrs里面
+- props支持string以外的类型 attrs只有string类型
