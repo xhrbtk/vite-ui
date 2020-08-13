@@ -30,3 +30,14 @@
 - props不包含事件 attrs包含
 - props没有声明的属性 会跑到atrrs里面
 - props支持string以外的类型 attrs只有string类型
+
+## ui裤的css注意事项
+- 不能使用gscoped 
+1.因为data-v-xx中的xx每次运行可能不同
+2.必须输出稳定不变的class选择器 方便使用者覆盖
+
+- 必须加前缀
+1. .button 不行 很容易被使用者覆盖
+2. .gulu-button可以 不太容易被覆盖
+3. .theme-link不行 很容易被使用者覆盖
+4. .gulu-theme可以不太容易被覆盖
